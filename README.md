@@ -29,6 +29,32 @@ The install script detects your actual available RAM and recommends a model size
 
 See [INSTALL.md](INSTALL.md) for the full step-by-step guide.
 
+## Screenshots
+
+![opencode installed successfully](screenshots/01-opencode-install.png)
+*opencode installed and ready to go.*
+
+![Agent reading the scope file before acting](screenshots/02-agent-reads-scope.png)
+*The agent reads scope/current-engagement.md at the start of every session before doing anything else.*
+
+![Agent asking for confirmation before scanning](screenshots/03-confirmation-before-scan.png)
+*The agent proposes a tool sequence and explicitly asks for confirmation before running any active scan.*
+
+![Real findings — missing security headers and info disclosure](screenshots/04-real-findings-example.png)
+*Example findings against testphp.vulnweb.com, a publicly sanctioned practice target.*
+
+![Sensitive file discovery](screenshots/05-sensitive-file-discovery.png)
+*Agent discovering exposed files during black-box recon.*
+
+![Ollama model registered in opencode](screenshots/06-ollama-model-registered.png)
+*Local model successfully connected and available to opencode.*
+
+![HexStrike AI server startup](screenshots/07-hexstrike-server-banner.png)
+*HexStrike's MCP-connected tool server coming online.*
+
+![MCP server successfully added](screenshots/08-mcp-server-added.png)
+*HexStrike registered as an MCP server inside opencode.*
+
 ## Safety notice
 
 This tooling can run real, active security tests. Only use it against targets you own, have explicit written authorization to test, or that are publicly designated for security testing practice (e.g. OWASP Juice Shop, Acunetix's vulnweb.com test sites). Review `agents/bugbounty.md` and `agents/pentest-client.md` — both are written to ask for confirmation before active/destructive actions, but you are responsible for what you authorize it to do.
